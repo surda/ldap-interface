@@ -1,0 +1,29 @@
+{
+    "name": "surda/ldap-interface",
+    "description": "LDAP interfaces",
+    "keywords": ["ldap", "active directory"],
+    "type": "library",
+    "homepage": "http://surani.cz",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Radek Šuráni",
+            "homepage": "http://surani.cz",
+            "email": "radek@surani.cz"
+        }
+    ],
+    "support": {
+        "email": "radek@surani.cz",
+        "issues": "https://github.com/surda/ldap-interface/issues"
+    },
+    "require": {
+        "php": ">=7.1",
+        "ext-ldap": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Surda\\Ldap\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
