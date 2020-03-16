@@ -2,8 +2,7 @@
 
 namespace Surda\Ldap;
 
-use Surda\Ldap\Exception\AlreadyExistsException;
-use Surda\Ldap\Exception\ConnectionTimeoutException;
+use Surda\Ldap\Exception\BindException;
 use Surda\Ldap\Exception\InvalidCredentialsException;
 
 interface ConnectionInterface
@@ -11,8 +10,7 @@ interface ConnectionInterface
     /**
      * @param string|null $dn
      * @param string|null $password
-     * @throws AlreadyExistsException
-     * @throws ConnectionTimeoutException
+     * @throws BindException
      * @throws InvalidCredentialsException
      */
     public function bind(?string $dn = NULL, ?string $password = NULL): void;

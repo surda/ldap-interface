@@ -2,7 +2,7 @@
 
 namespace Surda\Ldap\Exception;
 
-class ConnectionTimeoutException extends ConnectionException
+class BindException extends ConnectionException
 {
 
 }
